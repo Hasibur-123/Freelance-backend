@@ -1,5 +1,5 @@
 const express = require('express');
-const router = express.Router(); // ✅ REQUIRED LINE
+const router = express.Router();
 
 const { sendContact, getLeads } = require('../controllers/contactController');
 
@@ -7,7 +7,7 @@ const { sendContact, getLeads } = require('../controllers/contactController');
 router.post('/contact', sendContact);
 router.get('/leads', getLeads);
 
-// ✨ New Reply route
+// ✅ Reply Route
 router.post('/reply', async (req, res) => {
   const { toEmail, subject, message } = req.body;
 

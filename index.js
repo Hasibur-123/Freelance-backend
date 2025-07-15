@@ -10,7 +10,7 @@ const app = express();
 
 // ✅ CORS setup for local frontend + Render
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://freelance-backend-oulv.onrender.com'],
+  origin: ['http://localhost:5173', 'https://elegant-sunshine-2040ca.netlify.app'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
